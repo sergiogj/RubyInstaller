@@ -1,8 +1,8 @@
 #!/bin/bash
 #https://gorails.com/setup/ubuntu/18.04
 #Instalar dependencias
-sudo apt-get update
-sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
+sudo apt update
+sudo apt install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
 #Instalar rbenv
 cd
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -32,4 +32,4 @@ echo "Presiona una tecla para continuar" ;read -p ""
 ssh -T git@github.com
 #Instalar Nodejs
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt install -y nodejs
